@@ -24,7 +24,7 @@ const router = express.Router();
 router.post("/admin/create", createAdmin);
 router.post("/Teacher/create", createTeacher);
 router.post("/student/create", createStudent);
-router.post("/subejct/create", isAdmin, createSubject);
+router.post("/subject/create", isAdmin, createSubject);
 router.post("/practical/create",isTeacher, createPractical);
 router.post("/enroll/add", EnrollPractical);
 router.get("/user/get", getAllUsers);
